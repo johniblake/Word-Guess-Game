@@ -12,28 +12,33 @@
     <header>HANGMAN</header>
     <div id="main-container">
       <div id="start-container">Press any key to start!</div>
+      <div id="end-screen">
+        <div id="word-was"></div>
+      </div>
       <div id="game-container">
-        <div id="record-container">
-          <div class="record">
-            <h3>Wins:</h3>
-            <div id="wins"></div>
+        <div id="info-container">
+          <div id="record-container">
+            <div class="record">
+              <h3>Wins:</h3>
+              <div id="wins"></div>
+            </div>
+            <div class="record">
+              <h3>Losses:</h3>
+              <div id="losses"></div>
+            </div>
           </div>
-          <div class="record">
-            <h3>Losses:</h3>
-            <div id="losses"></div>
+          <div id="guesses-left-container">
+            <h3>Guesses Left:</h3>
+            <div id="num-guesses"></div>
           </div>
         </div>
-        <div id="guesses-left-container">
-          <h3>Guesses Left:</h3>
-          <div id="num-guesses"></div>
+        <div id="guess-container">
+          <h3>Current Word:</h3>
+          <div id="guess"></div>
         </div>
         <div id="letters-guessed-container">
           <h3>Letters Guessed:</h3>
           <div id="letters"></div>
-        </div>
-        <div id="guess-container">
-          <h3>Your Guess:</h3>
-          <div id="guess"></div>
         </div>
       </div>
     </div>
