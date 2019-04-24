@@ -18,6 +18,10 @@ class Game {
     "capsLock",
     "tab",
     "backspace",
+    "arrowup",
+    "arrowleft",
+    "arrowright",
+    "arrowdown",
     " "
   ];
 
@@ -52,7 +56,7 @@ class Game {
     this.typeable = true;
 
     //register keydown events
-    document.addEventListener("keydown", event => {
+    document.onkeydown = event => {
       if (!this.touched) {
         this.touched = true;
         this.startGame();
@@ -62,7 +66,7 @@ class Game {
           this.guess(event);
         }
       }
-    });
+    };
   }
 
   //start game
